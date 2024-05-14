@@ -43,7 +43,7 @@ const index = () => {
         setOpenModel={setOpenModel}
         setDonate={setDonateCampaign}
       />
-      <button onClick={() => gasLimit()}>Send Fund</button>
+      {/* <button onClick={() => gasLimit()}>Send Fund</button> */}
       <Card
         title="Your Created Compaign"
         allcampaign={usercampaign}
@@ -63,4 +63,8 @@ const index = () => {
   );
 };
 
+
+
 export default index;
+
+

@@ -8,7 +8,7 @@ const NavBar = () => {
   const { currentAccount, connectWallet } = useContext(CrowdFundingContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuList = ["White Paper", "Project", "Donation", "Members"];
+  const menuList = ["All Campaigns", "Your Created", "Contact EC"];
   return (
     <div className="backgroundMain ">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -16,13 +16,13 @@ const NavBar = () => {
           <div className="flex items-center">
             <a
               href="/"
-              aria-label="Company"
-              title="Company"
+              aria-label="VOTEREUM"
+              title="VOTEREUM"
               className="inline-flex items-center mr-8"
             >
               <Logo color="text-white" />
               <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-                Company
+                VOTEREUM
               </span>
             </a>
             <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -30,8 +30,8 @@ const NavBar = () => {
                 <li key={i + 1}>
                   <a
                     href="/"
-                    aria-label="Our product"
-                    title="Our product"
+                    // aria-label="Our product"
+                    // title="Our product"
                     className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                   >
                     {el}
@@ -71,13 +71,13 @@ const NavBar = () => {
                     <div>
                       <a
                         href="/"
-                        aria-label="Company"
-                        title="Company"
+                        aria-label="VOTEREUM"
+                        title="VOTEREUM"
                         className="inline-flex items-center"
                       >
                         <Logo color="text-black" />
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Company
+                          VOTEREUM
                         </span>
                       </a>
                     </div>
@@ -103,8 +103,8 @@ const NavBar = () => {
                         <li key={i + 1}>
                           <a
                             href="/"
-                            aria-label="Our product"
-                            title="Our product"
+                            // aria-label="Our product"
+                            // title="Our product"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             {el}
